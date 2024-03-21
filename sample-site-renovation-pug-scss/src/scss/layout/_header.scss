@@ -1,0 +1,50 @@
+@use '../foundation/_variables' as v;
+@use '../foundation/_mixins' as mixins;
+
+/* header
+================================================ */
+.l-header {
+ padding: 1rem 0.75rem;
+ @include mixins.desktop-min {
+  padding: 1.5rem;
+   .l-inner {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+    align-items: center;
+   }
+  }
+.c-logo__image {
+ width: 15rem;
+ @include mixins.desktop-min {
+   width: clamp(15rem, -5.645rem + 43.01vw, 25rem);
+ }
+}
+.l-menu {
+ @include mixins.desktop-min {
+  width: 60%;
+  max-width: 39.375rem;
+ }
+ .c-menu-btn {
+  display: none;
+ }
+ .c-menu {
+  @include mixins.desktop-min {
+   display: flex;
+   justify-content: space-between;
+  }
+  &__item {
+   a {
+    @include mixins.desktop-min {
+     font-size: clamp(0.813rem, 0.425rem + 0.81vw, 1rem);
+     transition: 0.2s;
+     &:hover {
+      opacity: 0.7;
+      color:v.$primaryColor;
+     }
+    }
+   }
+  }
+ }// /.c-menu
+}// /.l-menu
+}// /.l-header

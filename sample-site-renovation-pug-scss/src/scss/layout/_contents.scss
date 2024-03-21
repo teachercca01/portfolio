@@ -1,0 +1,615 @@
+@use '../foundation/_variables' as v;
+@use '../foundation/_mixins' as mixins;
+
+/* main-common
+================================================ */
+.l-section:not(.hero) {
+ margin-bottom: 5rem;
+ text-align: center;
+}
+
+#category-label+div {
+ @include mixins.desktop-min {
+  text-align: left;
+ }
+}
+
+.c-title {
+ margin-bottom: 0.5rem;
+ font-size: clamp(1.75rem, 1.321rem + 1.83vw, 2.625rem);
+ font-weight: bold;
+ text-transform: uppercase;
+
+ @include mixins.desktop-min {
+  margin-bottom: 1rem;
+ }
+}
+
+.c-title__sub {
+ margin-bottom: 1.5rem;
+ color: v.$secondaryColor;
+ font-size: clamp(0.75rem, 0.627rem + 0.52vw, 1rem);
+
+ &::before,
+ &::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 0.1875rem;
+  width: 3.78125rem;
+  height: 0.0625rem;
+  background: v.$secondaryColor;
+  margin-right: 0.5rem;
+ }
+
+ @include mixins.desktop-min {
+  margin-bottom: 3rem;
+
+  &::before,
+  &::after {
+   bottom: 0.25rem;
+  }
+ }
+}
+
+/* hero
+================================================ */
+.hero {
+ margin-bottom: 3rem;
+
+ .hero__image {
+  width: 100vw;
+  max-height: calc(140vh - 52px);
+  object-fit: cover;
+  object-position: center top;
+ }
+
+ @include mixins.desktop-min {
+  margin-bottom: 11.7%;
+ }
+}
+
+/* concept
+================================================ */
+.concept {
+ .c-concept__heading {
+  margin-bottom: 1rem;
+  font-size: clamp(1.25rem, 1.005rem + 1.05vw, 1.75rem);
+  font-weight: 500;
+
+  @include mixins.desktop-min {
+   margin-bottom: 1.5rem;
+  }
+ }
+
+ .c-concept__text {
+  font-size: clamp(0.875rem, 0.814rem + 0.26vw, 1rem);
+  text-align: justify;
+  line-height: 2;
+
+  @include mixins.desktop-min {
+   max-width: 1020px;
+   margin: 0 auto;
+  }
+ }
+}
+
+// /.concept{
+
+/* service
+================================================ */
+.service {
+ .l-service__section {
+  margin-bottom: 3rem;
+
+  @include mixins.desktop-min {
+   width: 32%;
+   max-width: 18.75rem;
+   margin-bottom: 0;
+  }
+ }
+
+ .c-service__image,
+ .c-service__heading,
+ .c-service__text {
+  margin-bottom: 0.5rem;
+
+  @include mixins.desktop-min {
+   margin-bottom: 1rem;
+  }
+ }
+
+ .c-service-flex-container {
+  @include mixins.desktop-min {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 1020px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+ }
+
+ .c-service__heading {
+  font-size: clamp(1.25rem, 1.127rem + 0.52vw, 1.5rem);
+ }
+
+ .c-service__text,
+ .c-service__more {
+  font-size: clamp(0.875rem, 0.814rem + 0.26vw, 1rem);
+ }
+
+ .c-service__text {
+  text-align: justify;
+  line-height: 1.5;
+ }
+
+ .c-service__more {
+  text-align: right;
+ }
+
+ .c-service__more a {
+  position: relative;
+  bottom: 0.0625rem;
+
+  @include mixins.desktop-min {
+   bottom: 0;
+   right: 0.125rem;
+  }
+
+  &:hover {
+   opacity: 0.7;
+  }
+
+  &::after {
+   content: "";
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 0.375rem;
+   border: 0.25rem solid transparent;
+   border-right-width: 0;
+   border-left-color: v.$darkColor;
+
+   @include mixins.desktop-min {
+    margin-left: 0.25rem;
+   }
+  }
+ }
+}
+
+// /.service
+
+/* flow
+================================================ */
+.flow {
+ padding: 1rem 0;
+ background-color: v.$paleColor-2;
+
+ @include mixins.desktop-min {
+  padding: 3rem 0;
+ }
+
+ .c-title__sub {
+  color: v.$primaryColor;
+
+  &::before,
+  &::after {
+   position: relative;
+   bottom: 0.3125rem;
+   background: v.$primaryColor;
+  }
+ }
+
+ .c-flow {
+  @include mixins.desktop-min {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   flex-basis: calc(100% / 6);
+   max-width: 56.875rem;
+   margin: 0 auto;
+  }
+
+  .c-flow__item {
+   @include mixins.desktop-min {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   +.c-flow__item::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0.5rem auto;
+    border: 1rem solid transparent;
+    border-bottom-width: 0;
+    border-top-color: v.$primaryColor;
+    background-color: transparent;
+
+    @include mixins.desktop-min {
+     border-width: 1.875rem;
+     border-bottom-width: 0;
+     transform: rotate(-90deg);
+     margin-right: clamp(0.75rem, -0.927rem + 3.49vw, 1.563rem);
+    }
+   }
+
+   span {
+    display: block;
+    width: 85.612535612%;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: v.$darkColor;
+    font-size: clamp(1rem, 0.632rem + 1.57vw, 1.75rem);
+    color: v.$lightColor;
+
+    @include mixins.desktop-min {
+     width: clamp(3.125rem, 1.835rem + 2.69vw, 3.75rem);
+     height: 17.5rem;
+     padding: 0 clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+     writing-mode: vertical-lr;
+    }
+   }
+  }
+
+  @for $i from 2 through 6 {
+   .c-flow__item:nth-child(#{$i})::before {
+    opacity: 60% + (($i - 2) * 10);
+   }
+  }
+ }
+
+ // /.c-flow 
+}
+
+// /.flow
+
+/* Q&A
+================================================ */
+.faq.l-section {
+ @include mixins.desktop-min {
+  margin-bottom: 8.75rem;
+ }
+
+ .l-inner {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .c-faq {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: left;
+
+   @include mixins.desktop-min {
+
+    :nth-child(2),
+    :nth-child(6),
+    :nth-child(8) {
+     top: 0.875rem;
+    }
+   }
+
+   &__question,
+   &__answer {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: clamp(2.25rem, 1.76rem + 2.09vw, 3.25rem);
+    height: clamp(2.25rem, 1.76rem + 2.09vw, 3.25rem);
+    padding-left: 0.5rem;
+    padding-top: 0.3125rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    font-family: v.$headingFontFamily;
+    font-size: clamp(1.25rem, 0.821rem + 1.83vw, 2.125rem);
+    font-weight: bold;
+    color: v.$lightColor;
+   }
+
+   &__question {
+    background-color: v.$darkColor;
+   }
+
+   &__answer {
+    background-color: v.$primaryColor;
+   }
+
+   &__item {
+    position: relative;
+    width: 87%;
+    text-align: justify;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+     margin-bottom: 1.75rem;
+     top: 0.25rem;
+    }
+
+    @include mixins.desktop-min {
+     width: 92.5%;
+     text-align: justify;
+
+     :nth-of-type(2) {
+      margin-bottom: 2.75rem;
+     }
+
+     :nth-of-type(3) {
+      margin-bottom: 1rem;
+     }
+    }
+
+    @include mixins.mobile-middle {
+     width: calc(100% - 3.125rem);
+    }
+   }
+  }
+ }
+
+ //  /.c-faq
+}
+
+// / .faq.l-section
+
+/* contact
+================================================ */
+.l-section {
+ &.contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: v.$paleColor-1;
+  font-size: clamp(1rem, 0.877rem + 0.52vw, 1.25rem);
+  text-align: center;
+
+  @include mixins.desktop-min {
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+  }
+
+  .l-inner {
+   .c-form {
+    @include mixins.desktop-min {
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+     max-width: 1020px;
+     margin-left: auto;
+     margin-right: auto;
+     background: v.$lightColorRGBA-2;
+    }
+
+    fieldset {
+     margin-bottom: 1.5rem;
+
+     @include mixins.desktop-min {
+      &:first-child {
+       margin-bottom: 3rem;
+      }
+
+      &::after {
+       content: "";
+       display: block;
+       clear: both;
+      }
+
+      div:first-child {
+       text-align: left;
+      }
+
+      .c-form__label input,
+      .c-form__label {
+       cursor: pointer;
+      }
+
+      input[name="address2"],
+      input[name="email"],
+      input[name="email-confirm"],
+      textarea {
+       width: clamp(26.25rem, -5.234rem + 65.59vw, 41.5rem);
+       max-width: 41.5rem;
+      }
+
+      input#address2 {
+       margin-left: calc(0.75rem + clamp(17.5rem, 12.339rem + 10.75vw, 20rem));
+      }
+
+      textarea {
+       padding: calc(var(--space-extra-small) * 3) var(--space-small);
+       height: 13rem;
+      }
+     }
+
+     legend {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+
+      @include mixins.desktop-min {
+       float: left;
+       width: clamp(17.5rem, 12.339rem + 10.75vw, 20rem);
+       margin-bottom: 0;
+       text-align: right;
+      }
+
+      span:not(.c-form__address span) {
+       @include mixins.required-label;
+
+       @include mixins.desktop-min {
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.5rem;
+        line-height: 1;
+       }
+      }
+
+      input:focus:not([type="radio"]),
+      textarea:focus {
+       outline: 0.125rem solid v.$secondaryColor;
+      }
+     }
+
+     // /legend
+    }
+
+    // /fieldset
+    input:not(input[type="radio"], .c-form__address input, input[type="submit"]),
+    .c-form__address,
+    textarea {
+     @include mixins.desktop-min {
+      float: left;
+      margin-left: 0.75rem;
+     }
+    }
+
+    input {
+     width: 100%;
+     height: 2rem;
+    }
+
+    textarea {
+     height: 7.5rem;
+     line-height: 1.5;
+    }
+
+    input,
+    textarea {
+     @include mixins.text-input;
+
+     @include mixins.desktop-min {
+      max-width: clamp(18.75rem, 14.621rem + 8.6vw, 20.75rem);
+      height: auto;
+      padding: 0.71875rem 0.5rem;
+     }
+    }
+
+    &__label {
+     @include mixins.radio-button;
+
+     @include mixins.desktop-min {
+      top: 0;
+
+      :first-child {
+       margin-left: 0.75rem;
+      }
+
+      :first-child:not([name="category"]) {
+       margin-right: 2.5rem;
+      }
+
+      input[type="radio"]::after {
+       left: 0.3125rem;
+      }
+     }
+    }
+
+    &__address {
+     @include mixins.address-input;
+
+     @include mixins.desktop-min {
+      [name="address1"] {
+       margin-bottom: 0;
+       width: 13.875rem;
+      }
+
+      &:not(:last-child) {
+       margin-bottom: 1.75rem;
+      }
+     }
+    }
+
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+     position: relative;
+     top: -0.5rem;
+    }
+
+    &__submit {
+     @include mixins.submit-button;
+
+     @include mixins.desktop-min {
+      margin-top: 2rem;
+
+      &::after {
+       border-width: 0.625rem;
+      }
+
+      input {
+       height: 4.25rem;
+      }
+     }
+    }
+   }
+
+   // /.c-form
+  }
+
+  // /l-inner
+ }
+
+ // /.l-section.contact
+}
+
+// /.l-section
+
+/* pageTop
+================================================ */
+.c-pageTop {
+ position: relative;
+ text-align: right;
+
+ @include mixins.desktop-min {
+  top: -0.5rem;
+ }
+
+ a {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background: v.$darkColor;
+  position: relative;
+  right: 0.75rem;
+  transition: 0.2s;
+
+  @include mixins.desktop-min {
+   width: 3.75rem;
+   height: 3.75rem;
+   right: 1.5rem;
+   bottom: -0.0625rem;
+  }
+
+  &::before {
+   content: '';
+   display: block;
+   width: 1.5rem;
+   height: 1.5rem;
+   transform: rotate(-45deg);
+   border-top: 0.125rem solid v.$lightColor;
+   border-right: 0.125rem solid v.$lightColor;
+   position: absolute;
+   top: 0.6875rem;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+
+   @include mixins.desktop-min {
+    &::before {
+     width: 2rem;
+     height: 2rem;
+    }
+   }
+  }
+
+  &:hover {
+   background: v.$secondaryColor;
+   transform: translate(0, -0.5rem);
+  }
+ }
+
+ // /a
+}
+
+// /.c-pageTop

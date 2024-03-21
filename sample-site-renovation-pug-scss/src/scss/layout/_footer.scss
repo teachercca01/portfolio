@@ -1,0 +1,20 @@
+@use '../foundation/_variables' as v;
+@use '../foundation/_mixins' as mixins;
+
+.l-footer {
+ background-color: v.$darkColor;
+ padding: 0.75rem 0;
+ text-align: center;
+ position: relative;
+ bottom: 0.0625rem;
+ small {
+   color: v.$lightColor;
+   font-size: clamp(0.75rem, 0.689rem + 0.26vw, 0.875rem);
+   letter-spacing: 0.14em;
+ }
+ @include mixins.desktop-min {
+  position: relative;
+  top: -0.625rem;
+  padding: 1.5rem 0;
+ }
+}// /.l-footer

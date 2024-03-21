@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Design House Renovations</title>
+ <meta name="description" content="Design House Renovationsは、最高品質の住宅改装サービスを提供します。">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;family=Noto+Serif+JP&amp;display=swap"
+  rel="stylesheet">
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+  body::-webkit-scrollbar {
+   display: none;
+  }
+
+  .visually-hidden {
+   display: none;
+  }
+ </style>
+</head>
+
+<body class="l-body">
+ <header class="l-header">
+  <div class="l-inner">
+   <h1 class="c-logo"><a href="index.html"><img class="c-logo__image" src="images/logo.svg"
+      alt="Design House Renovationsのロゴ"></a></h1>
+   <nav class="l-menu"><!-- 開閉checkbox--><input class="c-menu-btn" type="checkbox" id="menu-btn" role="button"
+     aria-label="メニューを開閉する" aria-expanded="false" aria-pressed="true"><!-- 開閉icon--><label class="c-menu-icon"
+     for="menu-btn"><span class="navicon"></span></label><!-- menu-->
+    <ul class="c-menu" role="menubar">
+     <li class="c-menu__item" role="menuitem"><a href="#concept">コンセプト</a></li>
+     <li class="c-menu__item" role="menuitem"><a href="#service">サービス</a></li>
+     <li class="c-menu__item" role="menuitem"><a href="#flow">施工の流れ</a></li>
+     <li class="c-menu__item" role="menuitem"><a href="#faq">よくあるご質問</a></li>
+     <li class="c-menu__item" role="menuitem"><a href="#contact">お問い合わせ</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+ <main>
+  <div class="l-section hero">
+   <picture>
+    <source srcset="images/hero-pc.jpg" media="(min-width: 768px)"><img class="hero__image" src="images/hero-sp.jpg"
+     alt="Design House Renovationsがリフォームしたリビング">
+   </picture>
+  </div>
+  <section class="l-section concept" id="concept">
+   <div class="l-inner">
+    <h2 class="c-title">Concept</h2>
+    <p class="c-title__sub">コンセプト</p>
+    <section>
+     <h3 class="c-concept__heading">家族が笑顔になれる場所</h3>
+     <p class="c-concept__text">家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れのしやすい素材を使用したリフォームをご提案いたします。
+     </p>
+    </section>
+   </div>
+  </section>
+  <section class="l-section service" id="service">
+   <div class="l-inner">
+    <h2 class="c-title">Service</h2>
+    <p class="c-title__sub">サービス</p>
+    <div class="c-service-flex-container">
+     <section class="l-service__section"><img class="c-service__image" src="images/service-ph-1.jpg" alt="リフォームした浴室の写真">
+      <h3 class="c-service__heading">浴室</h3>
+      <p class="c-service__text">ご家族が一緒に入れる広めの浴槽や手すり等、安全に配慮しています。</p>
+      <p class="c-service__more"><a href="#">more</a></p>
+     </section>
+     <section class="l-service__section"><img class="c-service__image" src="images/service-ph-2.jpg"
+       alt="リフォームしたリビングの写真">
+      <h3 class="c-service__heading">リビング</h3>
+      <p class="c-service__text">照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+      <p class="c-service__more"><a href="#">more</a></p>
+     </section>
+     <section class="l-service__section"><img class="c-service__image" src="images/service-ph-3.jpg"
+       alt="リフォームしたキッチンの写真">
+      <h3 class="c-service__heading">キッチン</h3>
+      <p class="c-service__text">機能性だけでなく、デザイン性にもこだわっております。</p>
+      <p class="c-service__more"><a href="#">more</a></p>
+     </section>
+    </div>
+   </div>
+  </section>
+  <section class="l-section flow" id="flow">
+   <div class="l-inner">
+    <h2 class="c-title">Flow</h2>
+    <p class="c-title__sub">施工の流れ</p>
+    <ol class="c-flow">
+     <li class="c-flow__item"><span>ご相談</span></li>
+     <li class="c-flow__item"><span>現地調査</span></li>
+     <li class="c-flow__item"><span>お見積り</span></li>
+     <li class="c-flow__item"><span>ご契約</span></li>
+     <li class="c-flow__item"><span>施工</span></li>
+     <li class="c-flow__item"><span>お引越し</span></li>
+    </ol>
+   </div>
+  </section>
+  <section class="l-section faq" id="faq">
+   <div class="l-inner">
+    <h2 class="c-title">Q&amp;A</h2>
+    <p class="c-title__sub">よくあるご質問</p>
+    <dl class="c-faq">
+     <dt class="c-faq__question">Q.</dt>
+     <dd class="c-faq__item">見積りは無料ですか？</dd>
+     <dt class="c-faq__answer">A.</dt>
+     <dd class="c-faq__item">はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。</dd>
+     <dt class="c-faq__question">Q.</dt>
+     <dd class="c-faq__item">普段通り生活をしながらのリフォーム工事は可能ですか？</dd>
+     <dt class="c-faq__answer">A.</dt>
+     <dd class="c-faq__item">はい。もちろん可能です。工事中の箇所は、一部使用できなくなる場合もございますので、あらかじめご了承ください。大規模なリフォームの場合には、仮住まいもご提案しております。</dd>
+    </dl>
+   </div>
+  </section>
+  <section class="l-section contact" id="contact">
+   <div class="l-inner">
+    <h2 class="c-title">Contact</h2>
+    <p class="c-title__sub">お問い合わせ</p>
+    <form class="c-form">
+     <fieldset>
+      <legend id="category-label">お問い合わせ種別<span>必須</span></legend>
+      <div><label class="c-form__label"><input type="radio" name="category" value="A"
+         required="required" />資料請求</label><label class="c-form__label"><input type="radio" name="category" value="B"
+         required="required" />ご相談</label></div>
+     </fieldset>
+     <fieldset>
+      <legend id="name-label">お名前<span>必須</span></legend><label class="visually-hidden" for="name">お名前</label><input
+       class="c-form__input" type="text" id="name" name="name" required="required" aria-labelledby="name-label"
+       placeholder="中央　太郎" />
+     </fieldset>
+     <fieldset>
+      <legend id="ruby-label">フリガナ<span>必須</span></legend><label class="visually-hidden" for="ruby">フリガナ</label><input
+       class="c-form__input" type="text" id="ruby" name="ruby" required="required" aria-labelledby="ruby-label"
+       placeholder="チュウオウ　タロウ" />
+     </fieldset>
+     <fieldset>
+      <legend id="tel-label">電話番号<span>必須</span></legend><label class="visually-hidden" for="tel">電話番号</label><input
+       class="c-form__input" type="text" id="tel" name="tel" required="required" aria-labelledby="tel-label"
+       placeholder="000-0000-0000" />
+     </fieldset>
+     <fieldset>
+      <legend id="address1-label">住所<span>必須</span></legend><label class="visually-hidden" for="address1">住所</label>
+      <div class="c-form__address"><span>〒</span><input class="c-form__input" type="text" id="address1" name="address1"
+        required="required" aria-labelledby="address1-label" placeholder="000-0000" /></div><label
+       class="visually-hidden" for="address2"></label><input class="c-form__input" type="text" id="address2"
+       name="address2" required="required" aria-labelledby="address2-label" placeholder="〇市〇町〇番地" />
+     </fieldset>
+     <fieldset>
+      <legend id="email-label">メールアドレス<span>必須</span></legend><label class="visually-hidden"
+       for="email">メールアドレス</label><input class="c-form__input" type="email" id="email" name="email" required="required"
+       aria-labelledby="email-label" placeholder="sample@gmail.com" />
+     </fieldset>
+     <fieldset>
+      <legend id="email-confirm-label">メールアドレス(確認用)<span>必須</span></legend><label class="visually-hidden"
+       for="email-confirm">メールアドレス(確認用)</label><input class="c-form__input" type="email" id="email-confirm"
+       name="email-confirm" required="required" aria-labelledby="email-confirm-label" placeholder="sample@gmail.com" />
+     </fieldset>
+     <fieldset>
+      <legend id="comment-label">お問い合わせ内容</legend><label class="visually-hidden" for="comment">お問い合わせ内容</label><textarea
+       class="c-form__textarea" id="comment" name="comment" aria-labelledby="comment-label"
+       placeholder="お問い合わせ内容を入力してください。"></textarea>
+     </fieldset>
+     <div class="c-form__submit"><input type="submit" value="入力内容を確認する  "></div>
+    </form>
+   </div>
+  </section>
+  <p class="c-pageTop"><a href="#"></a></p>
+ </main>
+ <footer class="l-footer">
+  <div class="l-inner"><small>&copy; Design House Renovations</small></div>
+ </footer>
+ <script src="js/main.js"> </script>
+</body>
+
+</html>

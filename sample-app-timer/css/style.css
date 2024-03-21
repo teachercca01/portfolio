@@ -1,0 +1,194 @@
+/*********************************
+CSSカスタムプロパティ
+*********************************/
+:root {
+  --font-family: Arial, sans-serif;
+  --main-color: #333;
+  --base-color-1: #fff;
+  --base-color-2: #f2f2f2;
+  --accent-color-1: #e0e017;
+  --accent-color-2: #14e2d3;
+  --accent-color-3: #e21414;
+  --accent-color-4: #21e017;
+  --margin-padding-1: 1.25rem;
+  --margin-padding-2: 0.5rem;
+  --fontsize-big: clamp(1.5rem, 5vw, 5rem);
+  --fontsize-regular: clamp(1rem, 3vw, 3rem);
+  --fontsize-small: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+/*********************************
+reset
+*********************************/
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*********************************
+全体
+*********************************/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-color);
+  font-family: var(--font-family);
+  color: var(--base-color-1);
+}
+
+.l-wrap {
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: var(--margin-padding-1);
+  margin: 0 auto;
+}
+
+.c-heading {
+  font-size: var(--fontsize-regular);
+  text-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 4px var(--accent-color-1);
+}
+
+/*********************************
+ カウントダウン領域
+*********************************/
+.c-timer {
+  margin-bottom: var(--margin-padding-1);
+  font-size: var(--fontsize-big);
+  text-align: center;
+}
+
+.c-timer__unit {
+  display: inline-block;
+  padding: var(--margin-padding-2) 0;
+  margin: 0 var(--margin-padding-2);
+  font-size: var(--fontsize-big);
+  text-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 5px var(--accent-color-2),
+    0 0 10px var(--accent-color-2),
+    0 0 10px var(--accent-color-2);
+}
+
+/*********************************
+ 入力領域
+*********************************/
+.c-input-group {
+  margin-bottom: var(--margin-padding-1);
+}
+
+.o-input {
+  width: 20%;
+  max-width: 8rem;
+  margin-right: 0.5rem;
+  padding: var(--margin-padding-1);
+  margin-bottom: var(--margin-padding-1);
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--base-color-2);
+  outline: 0;
+  color: var(--main-color);
+  font-size: var(--fontsize-regular);
+  box-shadow:
+    1px 1px 1px var(--base-color-1),
+    1px 1px 3px var(--accent-color-2),
+    1px 1px 5px var(--accent-color-2);
+}
+
+.o-input:focus {
+  background: #fff;
+}
+
+.o-input::-webkit-outer-spin-button,
+.o-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.o-input {
+  -moz-appearance: textfield;
+}
+
+/*********************************
+ ボタン領域
+*********************************/
+.c-button {
+  display: inline-block;
+  width: 6rem;
+  padding: var(--margin-padding-2) var(--margin-padding-1);
+  margin-right: var(--margin-padding-1);
+  border: none;
+  border-radius: 0.25rem;
+  background: transparent;
+  cursor: pointer;
+  color: var(--base-color-1);
+  font-size: var(--fontsize-small);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 400px) {
+  .c-button {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+.c-button:hover {
+  transform: scale(1.1);
+}
+
+.c-button--start {
+  text-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 3px var(--accent-color-2);
+  box-shadow: 0 0 1px var(--base-color-1),
+    0 0 5px var(--accent-color-2),
+    0 0 20px var(--accent-color-2);
+}
+
+.c-button--stop {
+  text-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 20px var(--accent-color-3),
+    0 0 25px var(--accent-color-3);
+  box-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 10px var(--accent-color-3),
+    0 0 25px var(--accent-color-3);
+}
+
+.c-button--reset {
+  text-shadow:
+    0 0 1px var(--base-color-1),
+    0 0 3px var(--accent-color-4);
+  box-shadow:
+    0 0 1px var(--accent-color-4),
+    0 0 10px var(--accent-color-4);
+}
+
+@media screen and (min-width: 768px) {
+  .c-timer__unit {
+    padding: calc(var(--margin-padding-1) * 2);
+    font-size: var(--fontsize-big);
+  }
+}
+
+/*********************************
+カウントダウン終了時
+*********************************/
+.end~*,
+.end * {
+  color: var(--main-color);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.end .c-button {
+  background: var(--main-color);
+  color: var(--base-color-1);
+}
+
+.end .o-input {
+  background: var(--base-color-1);
+}
