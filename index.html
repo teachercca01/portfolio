@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="求職者支援訓練で習得したコーディングの成果と自己紹介を掲載しているポートフォリオサイトです。">
+   <title>Haruka's Portfolio</title>
+   <!-- favicon -->
+   <link rel="icon" href="apple-touch-icon.png">
+   <link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon.png">
+   <!-- font awesome icons -->
+   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+   <!-- google fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet">
+   <!-- bootstrap css -->
+   <link href="common/css/styles.css" rel="stylesheet">
+   <!-- my css-->
+   <link href="common/css/custom.css" rel="stylesheet">
+</head>
+
+<body id="top">
+   <!-- ↓ loading -->
+   <div class="loading">
+      <div id="particles-js"></div>
+      <!-- /#particles -->
+      <div class="draw">
+         <svg class="svg-animated" viewBox="0 0 301 148.1">
+            <path id="path-1" d="M129.4,58.1l5.9,0.1c3.1,0.2,4.6,1.1,4.6,2.4c0,0.7-0.6,1-1.6,1c-5.3,0-9.4,0.1-12.2,0.4l-23.7,28.6l-3.2,4.3
+        C97.4,97,96.1,98,95,98c-0.7,0-1.4-0.3-2.1-1c-0.7-0.7-1-1.4-1-2.1c0-1.3,3.8-6.8,11.5-16.5l13.2-16.1L85,63.3
+        c-11.7,12.2-19.7,20.2-24,24c-12.1,10.7-21.6,16-28.5,16c-3.1,0-5.6-1-7.6-2.9c-2-1.9-3-4.4-3-7.5c0-7.3,4.7-14.5,14-21.6
+        c9.3-7.1,23.6-11,43-11.6c26.2-28.3,39.4-43.2,39.5-44.7l-0.4-0.4c-2.8,0.1-8.9,3-18.2,8.9l-13.9,8.7c-0.5,0-0.8-0.3-0.8-0.8
+        c0-1.9,5.6-6,16.9-12.4c11.3-6.4,18.4-9.6,21.3-9.6c1.1,0,2.1,0.4,3.2,1.2c1.1,0.8,1.6,1.7,1.6,2.8c0,1.5-3.2,5.7-9.7,12.8
+        L88.3,59.5l31.7-1.4c25.3-29.2,38.9-43.7,40.8-43.7c1.7,0,2.6,0.7,2.6,2.1c0,1.1-1.5,3.2-4.4,6.5C148,35.5,138.1,47.2,129.4,58.1z
+         M75.7,63.5c-9.6,0.3-17.3,1.6-23.2,3.8c-6.7,2.5-13,7-19,13.5c-5.2,5.7-7.8,10.3-7.8,13.8c0,3.1,1.8,4.6,5.4,4.6
+        c2.3,0,5.2-1,8.5-3.1c3.8-2.3,10-7.4,18.5-15.3C66,73.7,71.8,67.9,75.7,63.5z" fill="transparent"
+               stroke="#f8ebe5" />
+            <path id="path-2" d="M130.2,98.6c-2,0-2.9-1-2.9-3c0-1.7,0.8-3.4,2.4-5.1c1.6-1.7,3.2-2.6,4.9-2.6c2.1,0,3.1,1,3.1,3
+        c0,1.6-0.8,3.3-2.5,5C133.4,97.7,131.7,98.6,130.2,98.6z" fill="transparent" stroke="#f8ebe5" />
+            <path id="path-3" d="M238.1,60.2c-13.6,11.7-22.4,19.1-26.6,22.3C197.8,93,188,98.2,182.3,98.2c-6,0-9.1-3.5-9.1-10.4
+        c0-7,4.2-15.2,12.5-24.6c3.7-4.1,10.6-10.7,20.7-19.6c7.7-6.8,13.6-12.2,17.7-16.3c4.9-4.8,7.4-7.7,7.4-8.7c0-0.4-0.3-0.7-0.9-0.7
+        c-2.5,0-8.2,2-16.9,6c-8.7,4-17.7,9.8-26.8,17.5c-9.1,7.7-13.7,12.6-13.7,14.7c0,0.8,0.5,1.2,1.6,1.2c2.5,0,6-1,10.3-3.1l6.2-3.1
+        c0.3,0.1,0.5,0.3,0.5,0.6c0,1.5-2.5,3.4-7.6,5.8c-4.8,2.3-8.2,3.4-10.3,3.4c-3.3,0-5-1.5-5-4.4c0-4.2,4.5-10.1,13.6-17.8
+        c6.5-5.5,14.1-10.6,22.8-15.3c10.6-5.8,19-8.6,25.4-8.6c3.5,0,5.3,1.6,5.3,4.6c0,3.8-5.1,10.6-15.3,20.4l-28.5,26.7
+        c-10.2,10.4-15.3,18.3-15.3,23.7c0,2.8,1.4,4.2,4.2,4.2c5.6,0,16.1-5.9,31.5-17.8c9.2-7.1,18.9-15.4,29.3-24.8
+        c4.3-4,13.1-12.7,26.3-26.3c3.9-4,6.3-6.1,7.1-6.1c0.8,0,1.7,0.3,2.5,0.8c0.9,0.5,1.3,1.2,1.3,1.9c0,0.8-0.4,1.7-1.3,2.6l-72.4,81.8
+        l-8,8c-3.8,3.8-6,6.4-6.4,7.8c0.5-0.1,1.3-0.6,2.4-1.5c1-0.9,1.7-1.3,2.1-1.3c0.4,0,0.7,0.2,0.8,0.5c0,0.6-1.9,2.5-5.6,5.8
+        c-3.5,3.1-6.1,5.7-7.8,7.8c-1.5,1.9-2.7,2.8-3.7,2.8c-0.9,0-1.7-0.4-2.4-1.2c-0.8-0.8-1.2-1.7-1.2-2.6c0-1.4,1.2-3.5,3.7-6.2
+        L222.6,78L238.1,60.2z" fill="transparent" stroke="#f8ebe5" />
+            <path id="path-4" d="M7.3,137.4c1.8-0.3,3.5-0.6,5.3-0.9c4.9-0.9,9.8-1.7,14.7-2.5c7.5-1.3,14.9-2.5,22.4-3.7
+        c9.4-1.5,18.8-3,28.3-4.5c10.7-1.6,21.5-3.2,32.2-4.8c11.5-1.6,23.1-3.2,34.6-4.7c11.7-1.5,23.4-2.9,35.2-4.1
+        c11.3-1.2,22.6-2.3,33.9-3.1c10.3-0.8,20.6-1.4,30.9-1.7c8.7-0.3,17.4-0.3,26.1,0.1c1.8,0.1,3.6,0.2,5.4,0.4
+        c0.6,0.1,2.1-0.5,2.6-0.6c2.1-0.5,4.1-1.1,6.2-1.6c2-0.5,4.1-1.1,6.1-1.7c0.7-0.2,1.9-0.8,2.5-0.7c-8.2-0.7-16.4-0.8-24.6-0.6
+        c-10,0.1-19.9,0.6-29.9,1.3c-11.1,0.7-22.2,1.7-33.3,2.8c-11.7,1.2-23.4,2.5-35,3.9c-11.6,1.4-23.2,2.9-34.8,4.5
+        c-11,1.5-22.1,3.1-33.1,4.8c-9.8,1.5-19.6,3-29.4,4.6c-8,1.3-16,2.6-24,3.9c-5.6,0.9-11.2,1.9-16.8,2.9c-2.6,0.5-5.2,0.9-7.8,1.4
+        c-0.1,0-0.2,0-0.3,0.1c-2.9,0.5-5.8,1.5-8.7,2.2c-2,0.5-4.1,1.1-6.1,1.7C9,136.9,8.1,137.3,7.3,137.4L7.3,137.4z"
+               fill="transparent" stroke="#f8ebe5" />
+            <text>
+               <textPath href="#path-1"></textPath>
+               <textPath href="#path-2"></textPath>
+               <textPath href="#path-3"></textPath>
+               <textPath href="#path-4"></textPath>
+            </text>
+         </svg>
+      </div>
+      <!-- /#draw -->
+   </div>
+   <!-- /.loading -->
+   <!-- ↑ loading -->
+   <!-- ↓ header -->
+   <header>
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="sideNav"> <a
+            class="navbar-brand js-scroll-trigger width" href="index.html"> <img
+               class="img-fluid img-profile rounded-circle mx-auto mb-2 prof opacity" src="common/images/profile.jpg"
+               alt="H.Yabuguchiのプロフィール写真"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+               class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-start">
+               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Profile</a> </li>
+               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="creations/index.html">Creations</a>
+                  <ul>
+                     <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                           href="creations/index.html#renovation">Site<span class="px-1">-</span>Renovation</a></li>
+                     <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                           href="creations/index.html#timer">App<span class="px-1">-</span>Timer</a></li>
+                     <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                           href="creations/index.html#game">App<span class="px-1">-</span>Game</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!-- /#navbarResponsive -->
+      </nav>
+   </header>
+   <!-- ↑ header -->
+   <!-- ↓ main -->
+   <main>
+      <div class="container-fluid p-0">
+         <!-- ↓greeting-->
+         <section class="resume-section">
+            <div class="resume-section-content">
+               <h1 class="mb-5 fs-1">Profile</h1>
+               <p class="lead lh-lg mb-5"><span class="d-block fs-3 mb-5"><em
+                        class="fst-normal marker primary-marker">はじめまして。
+                        <ruby>藪口
+                           <rt>やぶぐち</rt>
+                        </ruby>
+                        はるかと申します。</em></span>ご訪問くださりありがとうございます。<span
+                     class="d-block justify">このWebサイトでは、2024年5月より受講中の求職者支援訓練校Webエンジニア・プログラミング習得科にて制作した作品を掲載しております。約半年間にわたり習得した技術とこれまで培ってきた実務経験を基に、Web制作の業務に携わっていきたいと考えております。</span>何卒、宜しくお願い申し上げます。
+               </p>
+            </div>
+            <!-- /.resume-section-content -->
+         </section>
+         <!-- ↑greeting-->
+         <hr class="m-0">
+         <!-- ↓ work history -->
+         <section class="resume-section min-height">
+            <div class="resume-section-content">
+               <h2 class="mb-5 d-inline-block marker sub-marker">Work History<span class="fs-5"><span
+                        class="px-1">-</span>職務経歴</span></h2>
+               <!-- ↓ 求職者支援訓練 -->
+               <section class="d-flex flex-column flex-xl-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3">求職者支援訓練 - webプログラミング</h3>
+                     <p class="lh-lg justify">
+                        現在、厚生労働省が認定する職業訓練校において、フロントエンド及びバックエンドのWebプログラミングを習得中。デザインカンプや仕様書に基づいてJavaScript、HTML、CSS、PHP等のプログラミング言語について学んでいる。また、訓練中にチームプロジェクトも経験しており、効果的なコミュニケーションの図り方や共同で問題を解決する方法について学び、現代のWeb開発のニーズに応えるためのスキルを培っている。2024年11月修了予定。
+                     </p>
+                     <p class="bg-primary p-2 justify"><span
+                           class="px-1">-</span>様々な年代、経歴を持つ方々と共に、就職という目標に向かってリスキリングに取り組んでいます。新しい職場では、多様なニーズを考慮した柔軟なWebサービスの開発に尽力したいと考えております。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+                  <p class="flex-shrink-0 text-end"><span>2024年5月から現在</span></p>
+               </section>
+               <!-- ↑ 求職者支援訓練 -->
+               <!-- ↓Webディレクター・デザイナー・講師 -->
+               <section class="d-flex flex-column flex-xl-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3">Webディレクター、エンジニア・デザイナー・講師</h3>
+                     <p class="lh-lg justify">
+                        結婚を機に、ワークライフバランスを重視したキャリアへと転換。Web制作会社のディレクター、エンジニア、デザイナーとして民間企業や官公庁のプロジェクトに携わる。現在は、職業訓練校の講師として技術者の育成にも力を注いでいる。また、オンライン大学でAI、データサイエンス、セキュリティ、経営について学んでおり、より安全な企業のIT環境の構築に貢献することを目指している。卒業後は、社会人向けの大学院でAIセキュリティに関する研究を深めていく予定。
+                     </p>
+                     <p class="bg-primary p-2 justify"><span class="px-1">-
+                           家庭生活と仕事の両立に悩む中、柔軟な勤務が可能なWeb業界でのキャリアを選択しました。その結果、講師として職業人育成に関わる機会を得ることができ、自身の世界も広がりました。今後は、Web、ソフトウェア、インフラの各分野の経験とAI、セキュリティ、経営の知識を活かして、社会のデジタル変革に基づく企業の仕組みや戦略を考える職に就きたいと考えております。仕事、家庭、学びのバランスを保ちながら専門性を追及し、貢献していくことを決意しております。</span>
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+                  <p class="flex-shrink-0 text-end"><span>2015年4月から現在</span></p>
+               </section>
+               <!-- ↑ Webディレクター・デザイナー・講師 -->
+               <!-- ↓ インフラエンジニア -->
+               <section class="d-flex flex-column flex-xl-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3">インフラエンジニア</h3>
+                     <p class="lh-lg justify">
+                        前職のシステムエンジニアの経験と独学でCISCOの資格を取得したことが評価され、通信キャリア企業のインフラエンジニアとして転職する機会を得る。入社後3ヶ月間は、業務改善プロジェクトチームへ配属となり、社内の全部門の定型作業の自動化に貢献。その後、設計部門への異動となり、新規プロジェクトの企画、要件定義、チームマネジメントを担当するプロジェクトマネージャー兼プレイヤーとして勤務。結婚を機に退職。
+                     </p>
+                     <p class="bg-primary p-2 justify"><span
+                           class="px-1">-</span>社会全体が女性のリーダーシップを重視し始めた時期に、リーダーとしての役割を任されました。会社からの期待は高く、様々な困難に直面することもありましたが、組織全体を視野に入れて仕事を進めることの重要性を学ぶことができました。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+                  <p class="flex-shrink-0 text-end"><span>2006年4月から2015年3月</span></p>
+               </section>
+               <!-- ↑ インフラエンジニア -->
+               <!-- ↓ システムエンジニア兼コーダー -->
+               <section class="d-flex flex-column flex-xl-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3">システムエンジニア</h3>
+                     <p class="lh-lg justify">
+                        社会人として、非IT企業の開発部門にてシステムエンジニアとしてキャリアをスタート。当時の上司から「あなたにはITエンジニアの適性がある。もっと広い世界へ行きなさい。」と言って頂いたことをきっかけに、IT企業で働くことを真剣に考えるようになる。その後、周囲の有識者の方々からのアドバイスを受けて、人々のデジタルインフラを守るインフラエンジニアを目指すことを決意。在職中にCISCOの資格を取得し、新たなキャリアパスを追求するために退職。
+                     </p>
+                     <p class="bg-primary p-2 justify"><span
+                           class="px-1">-</span>社会人として初めて勤めた職場では、多くの先輩方に温かく見守っていただくという恵まれた環境で働くことができました。「IT業界で働きたい」と思うようになった私を、将来的な業界の展望を踏まえて快く送り出してくださった先輩方に今も深く感謝しています。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+                  <p class="flex-shrink-0 text-end"><span>2002年4月から2006年3月</span></p>
+               </section>
+               <!-- ↑ システムエンジニア兼コーダー -->
+            </div>
+            <!-- /.resume-section-content -->
+         </section>
+         <!-- ↑ work history -->
+         <hr class="m-0">
+         <!-- ↓ qualification -->
+         <section class="resume-section min-height">
+            <div class="resume-section-content">
+               <h2 class="mb-5 d-inline-block marker sub-marker">Qualification<span class="fs-5"><span
+                        class="px-1">-</span>保有資格</span></h2>
+               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>PHP8技術者認定試験</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>HTML5プロフェッショナル認定試験
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>PM(プロジェクトマネジメント試験)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>Adobe
+                           Illustratorクリエイター能力認定試験</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>Adobe
+                           Photoshopクリエイター能力認定試験</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>色彩検定1級</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>MOS(Microsoft Office
+                           Specialist)</li>
+                     </ul>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </div>
+               <!-- /.d-flex -->
+            </div>
+            <!-- /.resume-section-content -->
+         </section>
+         <!-- ↑ qualification -->
+         <hr class="m-0">
+         <!-- ↓ skills-->
+         <section class="resume-section min-height">
+            <div class="resume-section-content">
+               <h2 class="mb-5 d-inline-block marker sub-marker">Skills<span class="fs-5"><span
+                        class="px-1">-</span>スキル</span>
+               </h2>
+               <!-- ↓ html5 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fab fa-html5" aria-hidden="true"></i> HTML5</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>セマンティック要素によるページの構造の明確化</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>見出し要素の適切な利用</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>アクセシビリティの確保</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>HTML Living
+                        Standardの仕様に準拠したページ構造の定義を行うことができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ html5 -->
+               <!-- ↓ pug -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fa-solid fa-dog" aria-hidden="true"></i> Pug</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>環境構築(Node.js・npm・Pug
+                           extension pack)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ファイルのコンポーネント化</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>インデントによる要素のネスト</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>外部ファイルの取り込み(Includes)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>テンプレートからの継承(Extends)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>任意のコンテンツ挿入領域(Block)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>再利用可能なコードの定義(Mixins)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>変数の定義(- var)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>条件分岐とループ処理(If-else・Each)
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>HTMLテンプレートエンジンを利用して再利用性とメンテナンス性の高いマークアップを行うことができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ pug-->
+               <!-- ↓ css3 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS3</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>クラスベースのセレクタ設計</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>メディアクエリによるレスポンシブWebデザイン</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>フレックスボックスとグリッドによるレイアウト構築</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>トランジションとキーフレームアニメーション
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Google拡張機能「PerfectPixel」を利用したピクセルパーフェクトスタイリング</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>CSSカスタムプロパティ</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>BEM、FLOCSS</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>保守性と拡張性を備えたCSSの記述を行うことができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ css3 -->
+               <!-- ↓ bootstrap5 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fab fa-bootstrap" aria-hidden="true"></i> Bootstrap5</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Bootstrapの導入</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>コンテナ、カラム、ロー、ガターによるグリッドシステムの構築</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ボタン、カード等のコンポーネントの作成
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>CSSカスタムプロパティ</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Bootstrap Icons</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>Font
+                           Awesome Icons
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>レスポンシブサイトの構築</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>このポートフォリオサイトはBootstrap5で制作しています。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ bootstrap5 -->
+               <!-- ↓ scss -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fa-brands fa-sass"></i> Sass(SCSS)</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>環境構築(Live Sass
+                           Compiler)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>パーシャルによるCSSのモジュール化
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>セレクタのネスト</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>外部ファイルの読み込み(@use)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>別ファイルでの再エクスポート(@forward)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>変数の定義($)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>スタイルのグループ定義(@mixin)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>グループ定義したスタイルの適用(@include)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ループ処理(@for)
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>任意のスタイル挿入領域(@content)
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>SCSSの拡張言語を利用してモジュール性と再利用性の高いスタイリングを行うことができます。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ scss -->
+               <!-- ↓ javascript -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>変数・定数
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>データ型
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>オブジェクト・メソッド・プロパティ
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>DOM操作
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>条件分岐
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>演算子
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>配列
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>テンプレートリテラル
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>関数宣言
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>ループ処理
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>イベント処理</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>Web
+                           API (Web Storage API / Geolocation API / OpenWeatherMap API)</li>
+                        <!-- <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>クラス宣言
+                        </li> -->
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>画像のスライドショーやモーダルウィンドウ、アラート表示等インタラクティブな機能を実装することができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ javascript -->
+               <!-- ↓vue.js 後で有効化 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fab fa-vuejs" aria-hidden="true"></i> Vue.js</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>CDNのVue3の読み込み</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Vueインスタンスの生成</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>dataプロパティによるデータの定義</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>computedプロパティによるデータ変更時の自動再計算機能の定義</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>methodsオプションによるVueインスタンスから呼び出すメソッドの定義</li>
+                        <!-- <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>watchプロパティによる監視データ変更時の実行関数の定義</li> -->
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>マスタッシュ構文やディレクティブによるデータバインディング</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>コンポーネントファイルの作成、Vueによるファイル同士の紐付け、実行処理の定義</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>小規模開発向けのコンポーネントを実装することができます。大規模開発向けのNode.jsを使用したCLIの構築やVue.jsでの複雑な実装は今後の課題と認識しています。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑vue.js  後で有効化-->
+               <!-- ↓ php  後で有効化 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fab fa-php" aria-hidden="true"></i> PHP・SQL</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>変数・定数
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>データ型
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>DOM操作
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>条件分岐
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>演算子
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>配列
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>関数
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>ループ処理
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>スーパーグローバル変数
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>データベースの作成、削除</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ユーザーの作成、削除 </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>テーブルの作成、フィールド追加、テーブルの削除
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>レコード追加、選択、更新、削除
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>ECサイトの会員登録やログイン、カート機能の実装、入力フォームのチェック、HTMLタグの出力ができます。</p>
+                  </div>
+               </section>
+               <!-- ↑php 後で有効化 -->
+               <!-- ↓wordpress  -->
+               <!-- ↑wordpress  -->
+               <!-- ↓docker  -->
+               <!-- ↑docker  -->
+               <!-- ↓local  -->
+               <!-- ↑local -->
+               <!-- ↓xampp 後で有効化 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5"> -->
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3"><i class="fa-solid fa-server" aria-hidden="true"></i> XAMPP</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>インストール</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>データベースの構築
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>データベースのエラー対応</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ローカル環境から本番環境へのデプロイメント
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>ローカル環境に仮想サーバ環境を構築して開発し、レンタルサーバへデータベースも含めた移行ができます。
+                     </p>
+                  </div>
+               </section>
+               <!-- ↑xampp  後で有効化 -->
+               <!-- ↓ notion 後で有効化 -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-solid fa-n"></i> Notion</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>アカウント作成
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>メンバーの招待・承認
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>プロジェクトの作成
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>タスクの登録</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>期限の設定
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>担当者の決定
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>進捗管理
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>Notionによるプロジェクト管理を行うことができます。各タスクに担当者と期限、作業ステータスを設定し、計画的に進めることができます。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ notion 後で有効化 -->
+               <!-- ↓ git & github -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-solid fa-upload" aria-hidden="true"></i> Git &amp;
+                        GitHub</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>GitHubのアカウント作成</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Gitのインストール
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>VSCodeとGitHubとの連携
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>リポジトリの作成・共有
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ブランチの作成
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>変更のコミット、プッシュ、プルリクエスト、マージ</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span
+                           class="px-1">-</span>チーム制作でGitとGitHubを利用することができます。GitHub上でメンバーのブランチからのプルリクエストを承認し、マージすることができます。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ git & github -->
+               <!-- ↓ vscode -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-solid fa-code" aria-hidden="true"></i> Visual
+                        Studio
+                        Code</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Visual
+                           Studio
+                           Codeのインストール</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>基本設定
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>拡張機能の追加
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>コーディング</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>VSCodeによるコーディングスキルを持っています。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ vscode -->
+               <!-- ↓ os -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-brands fa-apple" aria-hidden="true"></i> OS
+                     </h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Android
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>iOS
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>macOS
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Windows
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>各OSの基本操作を行うことができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ os -->
+               <!-- ↓ browser -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-brands fa-chrome" aria-hidden="true"></i> Web
+                        Browser
+                     </h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Google
+                           Chrome</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Firefox
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Microsoft
+                           Edge</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Safari</li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>モダンブラウザの開発者モードを利用することができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ browser -->
+               <!-- ↓ filezilla -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-solid fa-upload" aria-hidden="true"></i> FileZilla
+                     </h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>FileZillaのインストール</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ローカルディレクトリとサーバの設定
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>データのアップロード
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>WebサイトをWebサーバへアップロードすることができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ filezilla -->
+               <!-- ↓ figma -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-brands fa-figma" aria-hidden="true"></i> Figma</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>画像エクスポート
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>スタイルの読み取り
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>プロトタイプの確認
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>Figmaによるデザインカンプを基にHTMLとCSSの設計を行うことができます。
+                     </p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ figma -->
+               <!-- ↓ zoom -->
+               <section class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                  <div class="flex-grow-1">
+                     <h3 class="mb-3 text-transform"><i class="fa-solid fa-video" aria-hidden="true"></i> Zoom</h3>
+                     <ul class="fa-ul mb-0">
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>Zoomのインストール
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check"
+                                 aria-hidden="true"></i></span>ミーティングへの参加
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fas fa-check" aria-hidden="true"></i></span>チャット
+                        </li>
+                     </ul>
+                     <p class="bg-primary p-2"><span class="px-1">-</span>複数人の会議やセミナーへの参加することができます。</p>
+                  </div>
+                  <!-- /.flex-grow-1 -->
+               </section>
+               <!-- ↑ zoom -->
+            </div>
+            <!-- /.resume-section-content -->
+         </section>
+         <!-- ↑ skills-->
+         <hr class="m-0">
+         <!--  ↓ about me -->
+         <section class="resume-section min-height">
+            <div class="resume-section-content">
+               <h2 class="mb-5 d-inline-block marker primary-marker">About Me<span class="fs-5"><span
+                        class="px-1">-</span>私について</span></h2>
+               <p class="justify">
+                  両親と3人姉妹という家族の中で愛情に包まれて育ちました。そのおかげで、これまで人間関係で大きな問題を抱えることなく、人生を歩んでくることができました。結婚して家庭を持ってからは、相手を尊重する思いやりの大切さとお互いが納得できるように話し合うことの重要性を学び、実践してきました。新たな職場でも、皆さんと良好な関係を築けるよう心がけてまいります。
+               </p>
+               <ul class="fa-ul mb-0">
+                  <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-hippo" aria-hidden="true"></i></span>Motto
+                     すべてのことは「おたがいさま」</li>
+                  <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-hippo"
+                           aria-hidden="true"></i></span>myFavorite
+                     フラクタル図形・お昼寝ソファー</li>
+                  <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-hippo" aria-hidden="true"></i></span>myGoal
+                     ITで人々が助け合える仕組み創りを。</li>
+               </ul>
+            </div>
+            <!-- /.resume-section-content -->
+         </section>
+         <!--  ↑ about me -->
+      </div>
+      <!-- /.container-fluid -->
+   </main>
+   <!-- ↑ main -->
+   <!-- ↓ footer -->
+   <footer class="px-5">
+      <div class="link-btn">
+         <p><a href="creations/index.html" class="btn border btn-shadow" title="作品ページへ移動します">作品ページへ<span
+                  class="px-1">&gt;</span></a></p>
+      </div>
+      <p class="page-top"><a href="#" title="このページの一番上へ移動します"></a></p>
+      <p class="text-end"><small>&copy; Portfolio by H.Yabuguchi</small></p>
+   </footer>
+   <!-- ↑footer -->
+   <!-- bootstrap js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="common/js/scripts.js"></script>
+   <!-- my js -->
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script src="common/js/main.js"></script>
+</body>
+
+</html>
