@@ -1,0 +1,39 @@
+@use '../foundation/_variables' as v;
+@use '../foundation/_mixins' as mixins;
+
+/* common
+================================================ */
+* {
+  @include mixins.all;
+}
+
+body {
+  @include mixins.body-text;
+}
+
+img {
+  @include mixins.fluid-img
+}
+
+.l-inner:not(.l-header .l-inner) {
+  max-width: 36.25rem;
+  padding: 0 0.75rem;
+  margin: 0 auto;
+
+  @include mixins.desktop-min {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3.75rem;
+  }
+}
+
+.l-menu a,
+.c-title,
+.c-title__sub {
+  font-family: v.$headingFontFamily;
+}
+
+.wf-active * {
+  visibility: visible;
+}

@@ -1,0 +1,53 @@
+extends ../layout/_layout
+include ../mixins/_mixins
+block title
+  title Design House Renovations
+block content
+  main
+    div.l-section.hero
+      picture
+        source(srcset="images/hero-pc.jpg", media="(min-width: 768px)")
+        img.hero__image(src="images/hero-sp.jpg", alt="Design House Renovationsがリフォームしたリビング")
+    +contentsBlock("concept","concept", "Concept", "コンセプト")
+      section
+        h3.c-concept__heading 家族が笑顔になれる場所
+        p.c-concept__text 家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れのしやすい素材を使用したリフォームをご提案いたします。
+    +contentsBlock("service","service", "Service", "サービス")
+      - var services = [ { image: "images/service-ph-1.jpg", heading: "浴室", text: "ご家族が一緒に入れる広めの浴槽や手すり等、安全に配慮しています。" }, { image: "images/service-ph-2.jpg", heading: "リビング", text: "照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。" }, { image: "images/service-ph-3.jpg", heading: "キッチン", text: "機能性だけでなく、デザイン性にもこだわっております。" } ]
+        div.c-service-flex-container
+          each service in services
+            section.l-service__section
+              img.c-service__image(src=service.image, alt="リフォームした" + service.heading + "の写真")
+              h3.c-service__heading= service.heading
+              p.c-service__text= service.text
+              p.c-service__more
+                a(href="#") more
+    +contentsBlock("flow","flow", "Flow", "施工の流れ")
+      - var items = ['ご相談', '現地調査', 'お見積り', 'ご契約', '施工', 'お引越し']
+      ol.c-flow
+        each item in items
+          li.c-flow__item
+            span= item
+    +contentsBlock("faq","faq", "Q&A", "よくあるご質問")
+      - var faqItems = [ { question: "見積りは無料ですか？", answer: "はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。" }, { question: "普段通り生活をしながらのリフォーム工事は可能ですか？", answer: "はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであらかじめご了承ください。大型リフォームの場合には、仮住まいもお薦めしております。" } ]
+      dl.c-faq
+        each item in faqItems
+          dt.c-faq__question Q.
+          dd.c-faq__item= item.question
+          dt.c-faq__answer A.
+          dd.c-faq__item= item.answer
+    +contentsBlock("contact","contact", "Contact", "お問い合わせ")
+      form.c-form
+        +radioFieldset("お問い合わせ種別", "category", [{label: "資料請求", value: "A"},{label: "ご相談", value: "B"}])
+        +formFieldset("お名前", "name", "text", "中央　太郎")
+        +formFieldset("フリガナ", "ruby", "text", "チュウオウ　タロウ")
+        +formFieldset("電話番号", "tel", "text", "000-0000-0000")
+        +formFieldset("住所", "address1", "text", "000-0000", "〒")
+        +formFieldset(null, "address2", "text", "〇市〇町〇番地", null, false)
+        +formFieldset("メールアドレス", "email", "email", "sample@gmail.com")
+        +formFieldset("メールアドレス(確認用)", "email-confirm", "email", "sample@gmail.com")
+        +formFieldset("お問い合わせ内容", "comment", "textarea", "お問い合わせ内容を入力してください。", null, true, false)
+        div.c-form__submit
+          input(type="submit" value="入力内容を確認する  ")
+    p.c-pageTop
+      a(href="#")

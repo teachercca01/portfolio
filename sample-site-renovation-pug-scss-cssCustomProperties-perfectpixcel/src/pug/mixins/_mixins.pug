@@ -1,0 +1,31 @@
+mixin contentsBlock(id, addClass,title, subTitle)
+  section.l-section(class=addClass,id=id)
+    div.l-inner
+      hgroup
+        h2.c-title= title
+        p.c-title__sub= subTitle
+      block
+mixin radioFieldset(legend, id, options)
+  fieldset
+    legend(id=`${id}-label`) #{legend}
+      span 必須
+    div
+      each option, index in options
+        label.c-form__label
+          input(type="radio", name=id, value=option.value, required=true)
+          | #{option.label}
+mixin formFieldset(legend, id, type, placeholder, prefix, includeLegend = true, includeRequired = true)
+  fieldset
+    if includeLegend
+      legend(id=`${id}-label`) #{legend}
+        if includeRequired
+          span 必須
+    label.visually-hidden(for=id) #{legend}
+    if prefix
+      div.c-form__address
+        span= prefix
+        input(type=type, id=id, name=id, required, aria-labelledby=`${id}-label`, placeholder=placeholder, class="c-form__input")
+    else if type === "textarea"
+      textarea(id=id, name=id, class="c-form__textarea", aria-labelledby=`${id}-label`, placeholder=placeholder)
+    else
+      input(type=type, id=id, name=id, required, aria-labelledby=`${id}-label`, placeholder=placeholder, class="c-form__input")

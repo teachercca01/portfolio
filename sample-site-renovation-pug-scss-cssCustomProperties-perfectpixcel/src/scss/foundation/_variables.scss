@@ -1,0 +1,27 @@
+//scss変数定義 - breakpoit・fontfamily・color
+$breakpoint-desktop-min: 768px;
+$breakpoint-mobile-max: 767px;
+$breakpoint-mobile-middle: 370px;
+$contents-max: 1140px;
+$bodyFontFamily: "Noto Sans JP", sans-serif;
+$headingFontFamily: "Noto Serif JP", serif;
+$primaryColor: #b71b26;
+$secondaryColor: #223e69;
+$secondaryColorRGB: rgb(34, 62, 105);
+$paleColor-1: rgba($secondaryColorRGB, 0.15);
+$paleColor-2: rgba($secondaryColorRGB, 0.05);
+$lightColor: rgb(255, 255, 255);
+$lightColorRGBA-1: rgba($lightColor, 0.9);
+$lightColorRGBA-2: rgba($lightColor, 0.5);
+$darkColor: #333;
+
+// css変数定義
+:root {
+ --space-unit: 1rem;
+ --space-0-25rem: calc(var(--space-unit) / 4);
+ --space-0-5rem: calc(var(--space-unit) / 2);
+ --space-1rem: var(--space-unit);
+ --space-1-5rem: calc(var(--space-unit) * 1.5);
+ --space-3rem: calc(var(--space-unit) * 3);
+ --space-5rem: calc(var(--space-unit) * 5);
+}
